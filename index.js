@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGO_URL, {
 */
 
 //conncet to database mongoDB
-mongoose.connect("mongodb://0.0.0.0:27017/authentication")
+mongoose.connect("mongodb://salsa:passwordPrompt@34.101.252.16:27017/?authMechanism=DEFAULT&authSource=admin")
 .then(() => {
     console.log('database terhubung')
 })

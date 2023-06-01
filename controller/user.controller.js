@@ -29,6 +29,7 @@ exports.DaftarUser = async(req, res) => {
     user.save()
 
     return res.status(201).json({
+        status: false,
         message: 'User berhasil terdaftar',
     })
     
